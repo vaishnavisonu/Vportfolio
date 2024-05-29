@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* ----- VARIABLES ----- */
+body {
+  overflow-x: hidden;
+}
 :root {
   /* --body-color: rgb(250, 250, 250); */
   --body-color: #ddd0c8;
@@ -405,6 +408,12 @@ h3 {
   /* overflow: hidden; */
   margin: 5%;
 }
+
+/* bug fix  */
+.boxA > .project-box {
+  width: 100%;
+}
+
 /* .project-box  */
 .card-1::after,
 .contact-info::after {
@@ -517,7 +526,7 @@ h3 {
   position: absolute;
   bottom: -100%;
   /* background: #e9e3e3; */
-  background-image: url(./images/zoom.jpg);
+  background-image: url(./images/forkify.jpg);
   filter: blur(2.5px);
 
   background-repeat: no-repeat;
@@ -535,7 +544,7 @@ h3 {
   position: absolute;
   bottom: -100%;
   /* background: #e9e3e3; */
-  background-image: url(./images/zoom.jpg);
+  background-image: url(./images/pdf.jpg);
   filter: blur(2.5px);
 
   background-repeat: no-repeat;
@@ -553,7 +562,7 @@ h3 {
   position: absolute;
   bottom: -100%;
   /* background: #e9e3e3; */
-  background-image: url(./images/zoom.jpg);
+  background-image: url(./images/ordering.jpg);
   filter: blur(2.5px);
 
   background-repeat: no-repeat;
@@ -704,6 +713,10 @@ footer {
   .featured-text {
     padding: 0;
   }
+
+  .boxA > .project-box {
+    width: 100%;
+  }
   .image,
   .image img {
     width: 320px;
@@ -786,8 +799,105 @@ footer {
   .project-container {
     justify-content: center;
   }
+
+  .project-box > label {
+    display: none;
+  }
+
+  .project-box > h3 {
+    font-size: 0.6em;
+    color: #ffffff;
+    filter: none !important;
+  }
+
   .project-box {
-    width: 80%;
+    overflow-y: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  .card-8 > h3 > span {
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 40%; */
+  }
+
+  .card-8 > h3 {
+    padding-left: 5px;
+    font-size: x-small;
+  }
+
+  .boxA,
+  .project-box {
+    height: 8em;
+    border-radius: 20px;
+  }
+
+  .card-1 {
+    background-image: url(./images/humble.jpg);
+    background-size: cover;
+    color: #000;
+  }
+
+  .card-2 {
+    background-image: url(./images/dice\ minii.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* filter: blur(10px) !important; */
+    backdrop-filter: blur(20px) !important;
+  }
+
+  .card-3 {
+    background-image: url(./images/pig.jpg);
+    background-position: center center;
+    background-size: cover;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+  }
+
+  .card-4 {
+    background-image: url(./images/todo.webp);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .card-5 {
+    background-image: url(./images/guess\ miniii.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .card-6 {
+    background-image: url(./images/zoom\ minii.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .card-7 {
+    background-image: url(./images/forkify\ minii.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .card-8 {
+    background-image: url(./images/pdf\ minii.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .card-9 {
+    background-image: url(./images/order\ minii.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /**************** about card*********************/
+
+  .skills-box > .skills-list > span,
+  .skills-header > h3 {
+    font-size: x-small;
   }
 }
 
@@ -806,7 +916,8 @@ footer {
   .input-field {
     width: 100%;
   }
-}
-.boxA > .project-box {
-  width: 100%;
+
+  .boxA > .project-box {
+    width: 100%;
+  }
 }
